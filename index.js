@@ -5,7 +5,7 @@ let cash = 10000;
 let code = 8437;
 console.log(chalk.magenta(`Pin code is: ${code}`));
 let pinCode = await inquirer.prompt({
-    type: "number",
+    type: "password",
     name: "codes",
     message: chalk.yellow("Please enter your PIN Code:"),
 });
